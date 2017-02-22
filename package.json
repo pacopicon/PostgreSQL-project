@@ -1,0 +1,30 @@
+{
+  "name": "postgresql-project",
+  "version": "1.0.0",
+  "description": "an app designed to learn how to hook up a postgresql db to angular app via sequelize",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pacopicon/PostgreSQL-project.git"
+  },
+  "keywords": [
+    "postgresql",
+    "angular",
+    "sequelize",
+    "node.js"
+  ],
+  "author": "paco picon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pacopicon/PostgreSQL-project/issues"
+  },
+  "homepage": "https://github.com/pacopicon/PostgreSQL-project#readme",
+  "dependencies": {
+    "pg": "^6.1.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.30.2"
+  }
+}
