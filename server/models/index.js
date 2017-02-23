@@ -39,3 +39,13 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 module.exports = db;
+
+var models = require('./server/models/');
+models.sequelize
+  .authenticate()
+  .then(function () {
+    console.log('Connection successful');
+  })
+  .catch(function(error) {
+    console.log("Error creating connection:", error);
+  });

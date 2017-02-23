@@ -45,4 +45,16 @@
   `- var sequelize = new Sequelize(config.database, config.username, config.password, config);
   + var sequelize = new Sequelize(config.url, config);`
 
-11 -
+11 - in models/index.js, add underneath:
+
+    var models = require('./server/models/');
+    models.sequelize
+      .authenticate()
+      .then(function () {
+        console.log('Connection successful');
+      })
+      .catch(function(error) {
+        console.log("Error creating connection:", error);
+      });
+
+12 -
